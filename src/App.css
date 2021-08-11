@@ -15,8 +15,8 @@
 	height: 100vh;
 
 	background-image: url("./assets/NewWorld_keyart.jpg");
+	background-position: 15%;
 	background-size: cover;
-	background-position: left;
 
 	z-index: -1;
 	opacity: 0.6;
@@ -33,7 +33,7 @@
 
 	background-image: url("./assets/NewWorld_keyart2.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: left;
 
 	z-index: -1;
 	opacity: 0.6;
@@ -50,10 +50,24 @@
 
 	background-image: url("./assets/NewWorld_keyart3.jpg");
 	background-size: cover;
-	background-position: left;
+	background-position: 30%;
 
 	z-index: -1;
 	opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+	#background-1 {
+		background-position: left;
+	}
+
+	#background-2 {
+		background-position: center;
+	}
+
+	#background-3 {
+		background-position: left;
+	}
 }
 
 #countdown-header {
