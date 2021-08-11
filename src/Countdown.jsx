@@ -37,7 +37,8 @@ function Countdown() {
 			setState(getRemaining(distance));
 
 			if (distance < 0) {
-				console.log("00:00:00");
+				headlineRef.current.innerText = "New World is out!";
+				countdownRef.current.style.display = "none";
 			}
 		}, 1000);
 
