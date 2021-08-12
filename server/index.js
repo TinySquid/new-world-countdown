@@ -1,9 +1,17 @@
 const express = require("express");
+const cors = require("cors");
 const { sendNotification } = require("./config/notification");
 
 const app = express();
 const port = process.env.PORT || 8000;
 
+const corsOptions = {
+	origin: "https://new-world-countdown.netlify.app",
+	optionsSuccessStatus: 200
+};
+
+app.use(helmet());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post("/subscribe", (req, res) => {
