@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import facts from "./assets/facts.json";
+import facts from "../assets/facts.json";
 
 function RandomFact() {
 	const [fact, setFact] = useState(getFact());

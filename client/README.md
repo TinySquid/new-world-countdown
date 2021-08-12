@@ -3,8 +3,8 @@
 - Countdown timer.
 - Background New World.
 - Random New World facts + button to refresh.
-- End of countdown gif + cat.
-- Push notification reminders daily + every 15 days.
+- End of countdown gif.
+- Push notification reminders daily.
 
 ## Available Scripts
 

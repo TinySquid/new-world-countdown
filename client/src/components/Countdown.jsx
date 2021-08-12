@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import Cat from "./assets/cat_1f409.png";
+import Cat from "../assets/cat_1f409.png";
 
 const second = 1000,
 	minute = second * 60,

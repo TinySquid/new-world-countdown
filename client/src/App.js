@@ -1,6 +1,6 @@
-import Countdown from "./Countdown";
-import BackgroundSelector from "./BackgroundSelector";
-import RandomFact from "./RandomFact";
+import Countdown from "./components/Countdown";
+import BackgroundSelector from "./components/BackgroundSelector";
+import RandomFact from "./components/RandomFact";
 import "./App.css";
 
 function App() {

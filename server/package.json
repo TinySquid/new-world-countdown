@@ -1,0 +1,12 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "backend for handling push-notification subscriptions",
+	"private": true,
+	"author": "Michael Nunes",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}
