@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Subscribe from "./Subscribe";
 
 import Cat from "../assets/cat_1f409.png";
 
@@ -52,6 +53,7 @@ function Countdown() {
 	return (
 		<>
 			<div id="header-container">
+				<Subscribe />
 				<h1 id="countdown-header" ref={headlineRef}>
 					Countdown to New World:
 				</h1>

@@ -71,6 +71,13 @@
 	}
 }
 
+#subscribe {
+	margin: 12px 8px 0 0;
+	font-size: 36px;
+
+	cursor: pointer;
+}
+
 #countdown-header {
 	font-size: 2rem;
 	font-weight: normal;
@@ -88,6 +95,7 @@
 #header-container {
 	display: flex;
 	align-items: center;
+	/* justify-content: center; */
 }
 
 li {
