@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
+import Cat from "./assets/cat_1f409.png";
+
 const second = 1000,
 	minute = second * 60,
 	hour = minute * 60,
@@ -27,6 +29,7 @@ function getRemaining(distance) {
 function Countdown() {
 	const headlineRef = useRef();
 	const countdownRef = useRef();
+	const catRef = useRef();
 
 	const [state, setState] = useState(getRemaining(initialDistance));
 
@@ -37,7 +40,8 @@ function Countdown() {
 			setState(getRemaining(distance));
 
 			if (distance < 0) {
-				headlineRef.current.innerText = "New World is out!";
+				headlineRef.current.innerText = `New World is out!`;
+				catRef.current.style.display = "block";
 				countdownRef.current.style.display = "none";
 			}
 		}, 1000);
@@ -47,9 +51,12 @@ function Countdown() {
 
 	return (
 		<>
-			<h1 id="countdown-header" ref={headlineRef}>
-				Countdown to New World:
-			</h1>
+			<div id="header-container">
+				<h1 id="countdown-header" ref={headlineRef}>
+					Countdown to New World:
+				</h1>
+				<img id="cat" ref={catRef} src={Cat} />
+			</div>
 			<div id="countdown" ref={countdownRef}>
 				<ul>
 					<li>
