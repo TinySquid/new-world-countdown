@@ -1,6 +1,7 @@
 .app {
-	margin: 0 auto;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	color: #fff;
 }
@@ -115,4 +116,48 @@ li span {
 	li span {
 		font-size: 4.5rem;
 	}
+}
+
+#fact-container {
+	text-align: center;
+	margin: 2rem;
+}
+
+#fact-container h2 {
+	padding: 0;
+	margin: 1rem;
+
+	font-size: 2rem;
+	font-weight: normal;
+	letter-spacing: 0.125rem;
+	text-transform: uppercase;
+}
+
+#fact-container p {
+	padding: 0;
+	margin: 0;
+
+	letter-spacing: 0.025rem;
+	font-size: 1.4rem;
+}
+
+#fact-container button {
+	padding: 0.6rem 5rem;
+	margin: 1rem;
+
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	background: none;
+}
+
+#fact-container button:hover {
+	cursor: pointer;
+	border: 1px solid rgb(228, 228, 228);
+	border-radius: 4px;
+}
+
+#fact-container button:active {
+	border: 1px solid rgb(185, 185, 185);
+	border-radius: 4px;
 }
