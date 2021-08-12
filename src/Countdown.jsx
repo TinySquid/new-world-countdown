@@ -55,7 +55,7 @@ function Countdown() {
 				<h1 id="countdown-header" ref={headlineRef}>
 					Countdown to New World:
 				</h1>
-				<img id="cat" ref={catRef} src={Cat} />
+				<img id="cat" ref={catRef} src={Cat} alt="Cat emoji" />
 			</div>
 			<div id="countdown" ref={countdownRef}>
 				<ul>

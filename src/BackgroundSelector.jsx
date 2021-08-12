@@ -26,9 +26,9 @@ function BackgroundSelector() {
 
 	return (
 		<>
-			<img id="background-1" ref={bg1Ref} />
-			<img id="background-2" ref={bg2Ref} />
-			<img id="background-3" ref={bg3Ref} />
+			<img id="background-1" ref={bg1Ref} alt="New World" />
+			<img id="background-2" ref={bg2Ref} alt="New World" />
+			<img id="background-3" ref={bg3Ref} alt="New World" />
 		</>
 	);
 }
