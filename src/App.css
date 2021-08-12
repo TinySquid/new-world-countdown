@@ -76,6 +76,7 @@
 	font-weight: normal;
 	letter-spacing: 0.125rem;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 #cat {
@@ -90,6 +91,7 @@
 }
 
 li {
+	text-align: center;
 	display: inline-block;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -139,6 +141,7 @@ li span {
 
 	letter-spacing: 0.025rem;
 	font-size: 1.4rem;
+	font-weight: lighter;
 }
 
 #fact-container button {
