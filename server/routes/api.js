@@ -25,7 +25,7 @@ router.post("/subscribe", async (req, res) => {
 
 		await addSubscriber(subscriber);
 
-		sendNotification(subscriber.subscription);
+		sendNotification(subscriber.subscription, "Success", "To unsubscribe, click the bell icon again.");
 
 		res.sendStatus(201);
 	} catch (e) {
