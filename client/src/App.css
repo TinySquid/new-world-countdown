@@ -171,3 +171,26 @@ li span {
 	border: 1px solid rgb(185, 185, 185);
 	border-radius: 4px;
 }
+
+footer {
+	color: white;
+	text-align: center;
+
+	position: fixed;
+	width: 100%;
+	bottom: 1rem;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem;
+}
+
+footer a:hover {
+	color: rgb(228, 228, 228);
+}
+
+footer a:active {
+	color: rgb(185, 185, 185);
+}
