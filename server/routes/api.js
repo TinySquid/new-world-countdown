@@ -18,7 +18,7 @@ router.post("/subscribe", async (req, res) => {
 	try {
 		const subscriber = req.body;
 
-		if (!subscriber.endpoint || !subscriber.keys) {
+		if (!subscriber.subscription.endpoint || !subscriber.subscription.keys) {
 			res.sendStatus(400);
 			return;
 		}
