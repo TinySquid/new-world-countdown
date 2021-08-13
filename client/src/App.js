@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import Countdown from "./components/Countdown";
 import BackgroundSelector from "./components/BackgroundSelector";
-import RandomFact from "./components/RandomFact";
+// import RandomFact from "./components/RandomFact";
 import Footer from "./components/Footer";
 
 import { v4 as uuidv4 } from "uuid";
