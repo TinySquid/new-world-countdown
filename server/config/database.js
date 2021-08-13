@@ -47,21 +47,16 @@ exports.fetchAllSubscriptions = async () => {
 	});
 
 	try {
-		// Connect, Fetch, Close
+		// Connect, Return Cursor
 		await client.connect();
 
 		const collection = client.db("subscriptions").collection("users");
 
 		const cursor = await collection.find();
 
-		const subscribers = [];
-
-		await cursor.forEach((subscriber) => subscribers.push(subscriber.subscription));
-
-		return subscribers;
+		return { client, cursor };
 	} catch (e) {
 		console.log(e);
-	} finally {
 		await client.close();
 	}
 };
