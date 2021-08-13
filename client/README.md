@@ -1,19 +1,15 @@
-# Requirements
+## Notes
 
-- Countdown timer.
-- Background New World.
-- Random New World facts + button to refresh.
-- End of countdown gif.
-- Push notification reminders daily.
+Service workers don't work in development mode, so you will have to run `yarn build` and then use something like `serve` to deploy locally for it to work.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, after setting up the `.env` file, you can run:
 
 ### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -25,5 +21,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
