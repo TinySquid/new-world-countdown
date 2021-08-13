@@ -5,6 +5,8 @@ const cors = require("cors");
 
 const router = require("./routes/api");
 
+require("./notification/dispatcher");
+
 // Setup
 const app = express();
 const port = process.env.PORT || 8000;
